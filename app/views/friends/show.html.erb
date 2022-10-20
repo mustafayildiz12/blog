@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+  
+  <div class="card-body">
+   <%= render @friend %>
+  </div>
+</div>
+
+
+<div>
+  <%= link_to "Edit", edit_friend_path(@friend) ,class:"btn btn-secondary" %> |
+ <br><br>
+  <%= link_to "Back to friends", friends_path ,class:"btn btn-secondary" %>
+  <br><br>
+
+  <%= button_to "Destroy", @friend, class:"btn btn-danger", method: :delete %>
+</div>

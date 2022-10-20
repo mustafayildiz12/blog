@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 
 <h1>Friends</h1>
 
@@ -9,6 +10,7 @@
       <th scope="col">Email</th>
       <th scope="col">Phone</th>
       <th scope="col">Twitter</th>
+      <th scope="col">Id</th>
     </tr>
   </thead>
   <tbody>
@@ -26,3 +28,9 @@
 
 
 <%= link_to "New friend", new_friend_path, class:"btn btn-outline-primary" %>
+<% else%>
+<h1>Blogs#init</h1>
+<p>Please Login</p>
+
+
+<% end -%>

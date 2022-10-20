@@ -14,10 +14,10 @@
 
         <% if user_signed_in? %>
           <%= link_to 'Add New Friend', new_friend_path, class: "nav-link" %>
-          <% if user_signed_in? %>
-          <<% end -%>
-         <%= link_to 'Friends', friends_path, class: "nav-link" %>
+         
+        
          <% end -%>
+          <%= link_to 'Friends', friends_path, class: "nav-link" %>
 
           <% if !user_signed_in? %>
             <%= link_to 'Sign In',

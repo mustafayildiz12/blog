@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :friends
  # get 'blogs/init'
  # get 'home/index'
- root 'home#index'
+ # root 'home#index'
+  root 'friends#index'
  get 'home/abouts'
  devise_scope :user do
     get 'users/sign_out' => "devise/sessions#destroy"
